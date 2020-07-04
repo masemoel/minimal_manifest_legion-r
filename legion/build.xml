@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <project path="build/make" name="platform_build_make" remote="legion" revision="q" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+    
+    <project path="build/soong" name="platform_build_soong" remote="legion" revision="q" >
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
+    
+    <project path="bionic" name="platform_bionic" remote="legion" revision="q" />
+    <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="lineage" />
+    <project path="bootable/recovery" name="platform_bootable_recovery" remote="legion" revision="q" />
+    <project path="libcore" name="platform_libcore"  remote="legion" />
+
+    <project path="art" name="android_art" remote="lineage" />
+    <project path="development" name="android_development" remote="lineage" />
+    <project path="platform_testing" name="android_platform_testing" remote="lineage" />
+    <project path="manifest" name="platform_manifest" remote="legion" />
+
+</manifest>
