@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="hardware/legion/interfaces" name="platform_hardware_legion_interfaces" remote="legion" revision="q" />
-  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="legion" revision="q" />
+  <project path="hardware/legion/interfaces" name="hardware_legion_interfaces" remote="legion" revision="10" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="legion" revision="10" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="lineage" />
   <project path="hardware/broadcom/nfc" name="android_hardware_broadcom_nfc" remote="lineage" />
   <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="lineage" />
@@ -72,6 +72,5 @@
   <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="lineage" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lineage" revision="lineage-17.1-caf" />
   <project path="hardware/ril" name="android_hardware_ril" remote="lineage" />
-
    
   </manifest>
