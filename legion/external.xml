@@ -37,5 +37,4 @@
   <project path="external/unrar" name="android_external_unrar" remote="lineage" />
   <project path="external/vim" name="android_external_vim" remote="lineage" />
   <project path="external/zip" name="android_external_zip" remote="lineage" />
-  <project path="external/zlib" name="external_zlib" remote="legion" />
 </manifest>
