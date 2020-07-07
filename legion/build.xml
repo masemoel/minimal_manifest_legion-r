@@ -23,7 +23,7 @@
 
   <project path="art" name="android_art" remote="lineage" />
   <project path="development" name="android_development" remote="lineage" />
-  <project path="platform_testing" name="android_platform_testing" remote="lineage" />
+  <project path="platform_testing" name="platform_testing" remote="legion" />
   <project path="manifest" name="manifest" remote="legion" />
 
 </manifest>

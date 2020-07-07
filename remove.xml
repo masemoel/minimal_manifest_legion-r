@@ -78,13 +78,18 @@
 
   <!-- External repos -->
   <remove-project name="platform/external/ARMComputeLibrary" />
+  <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/cldr" />
+  <remove-project name="platform/external/icu" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/openssh" />
+  <remove-project name="platform/external/perfetto" />
   <remove-project name="platform/external/ppp" />
+  <remove-project name="platform/external/proguard" />
   <remove-project name="platform/external/python/asn1crypto" />
   <remove-project name="platform/external/python/cffi" />
   <remove-project name="platform/external/python/cryptography" />
@@ -92,9 +97,11 @@
   <remove-project name="platform/external/python/pyopenssl" />
   <remove-project name="platform/external/rapidjson" />
   <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinyalsa" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/toybox" />
+  <remove-project name="platform/external/zlib" />
 
   <!-- Framework repos -->
   <remove-project name="platform/frameworks/av" />
@@ -141,6 +148,7 @@
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/Bluetooth" />
+  <remove-project name="platform/packages/apps/Stk" />
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />

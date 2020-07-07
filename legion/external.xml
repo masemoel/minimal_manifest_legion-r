@@ -14,6 +14,10 @@
   <project path="external/json-c" name="android_external_json-c" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
   <project path="external/htop" name="android_external_htop" remote="lineage" />
+  <project path="external/chromium-webview" name="android_external_chromium-webview" remote="lineage" revision="master" clone-depth="1" />
+  <project path="external/perfetto" name="external_perfetto" remote="legion" />
+  <project path="external/proguard" name="external_proguard" remote="legion" />
+  <project path="external/icu" name="android_external_icu" remote="lineage" />
   <project path="external/libcxx" name="android_external_libcxx" remote="lineage" />
   <project path="external/libhevc" name="android_external_libhevc" remote="lineage" />
   <project path="external/libncurses" name="android_external_libncurses" remote="lineage" />
@@ -27,10 +31,11 @@
   <project path="external/ppp" name="android_external_ppp" remote="lineage" />
   <project path="external/rsync" name="android_external_rsync" remote="lineage" />
   <project path="external/selinux" name="android_external_selinux" remote="lineage" />
+  <project path="external/sqlite" name="external_sqlite" remote="legion" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" remote="lineage" />
   <project path="external/toybox" name="android_external_toybox" remote="lineage" />
   <project path="external/unrar" name="android_external_unrar" remote="lineage" />
   <project path="external/vim" name="android_external_vim" remote="lineage" />
   <project path="external/zip" name="android_external_zip" remote="lineage" />
-
+  <project path="external/zlib" name="external_zlib" remote="legion" />
 </manifest>
