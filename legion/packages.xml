@@ -22,5 +22,8 @@
   <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="legion" revision="10" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="legion" revision="10" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="legion" revision="10" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="legion" revision="10" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="legion" revision="10" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="legion" revision="10" />
 
 </manifest>
