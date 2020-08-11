@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="legion" revision="10" />
   <project path="external/tinycompress" name="external_tinycompress" remote="legion" revision="10" />
   <project path="external/google" name="external_google" remote="legion" revision="10" />
   <project path="external/asus/stitchimage" name="external_asus_StitchImage" remote="legion" revision="10" />
