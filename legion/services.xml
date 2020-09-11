@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="legion" revision="10" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="legion" revision="10" />
-   
-</manifest>

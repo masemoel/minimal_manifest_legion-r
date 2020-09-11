@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	
-  <project path="system/core" name="system_core" remote="legion" revision="10" />
-  <project path="system/vold" name="system_vold" remote="legion" revision="10" /> 
-  <project path="system/qcom" name="system_qcom" remote="legion" revision="10" />	
-  <project path="system/sepolicy" name="system_sepolicy" remote="legion" revision="10" />
-  <project path="system/bt" name="system_bt" remote="legion" revision="10" />
-  <project path="system/extras" name="android_system_extras" remote="lineage" />
-  <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="lineage" />
-  <project path="system/keymaster" name="android_system_keymaster" remote="lineage" />
-  <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" />
-  <project path="system/update_engine" name="android_system_update_engine" remote="lineage" />
-  <project path="system/netd" name="system_netd" remote="legion" revision="10" />
+  <project path="system/core" name="system_core" remote="legion" revision="11" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="legion" revision="11" />
+  <project path="system/bt" name="system_bt" remote="legion" revision="11" />
 	
 </manifest>

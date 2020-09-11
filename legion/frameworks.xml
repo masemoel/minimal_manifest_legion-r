@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project path="frameworks/av" name="frameworks_av" remote="legion" revision="10" />
-  <project path="frameworks/base" name="frameworks_base" remote="legion" revision="10" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="legion" revision="10" />
-  <project path="frameworks/native" name="frameworks_native" remote="legion" revision="10" />
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="legion" revision="10" />
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="legion" revision="10" />
-    
+  <project path="frameworks/av" name="frameworks_av" remote="legion" revision="11" />
+  <project path="frameworks/base" name="frameworks_base" remote="legion" revision="11" />
+  <project path="frameworks/native" name="frameworks_native" remote="legion" revision="11" />    
 </manifest>
