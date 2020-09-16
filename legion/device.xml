@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="legion" revision="11" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="legion" revision="11" />
+  <project path="device/legion/sepolicy" name="device_legion_sepolicy" remote="legion" revision="11" />
+
+</manifest>

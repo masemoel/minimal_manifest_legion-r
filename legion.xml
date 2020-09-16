@@ -8,7 +8,7 @@
           sync-j="8" />
   
   <!-- LegionOS Devices -->
-  <remote name="legionos-devices"
+  <remote name="LegionOS-Devices"
           fetch="https://github.com/LegionOS-Devices"
           revision="refs/heads/q"
           sync-j="8" />
@@ -34,9 +34,12 @@
 
   <!-- Imported projects -->
   <include name="legion/build.xml" />
+  <include name="legion/device.xml" />
+  <include name="legion/external.xml" />
   <include name="legion/frameworks.xml" />
   <include name="legion/hals.xml" />
   <include name="legion/packages.xml" />
+  <include name="legion/prebuilt.xml" />
   <include name="legion/system.xml" />
   <include name="legion/vendors.xml" />
 
