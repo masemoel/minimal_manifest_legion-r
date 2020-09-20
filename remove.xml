@@ -6,6 +6,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/tools/metalava" />
 
   <!-- google/generic/unused devices -->
   <remove-project name="device/amlogic/yukawa" />
@@ -94,10 +95,15 @@
   
     <!-- prebuilts -->
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
-  
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+
   <!-- system -->
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/vold" />
 
 </manifest>
