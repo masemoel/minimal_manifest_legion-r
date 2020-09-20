@@ -2,7 +2,7 @@
 <manifest>
 
   <project path="vendor/legion" name="vendor_legion" remote="legion" revision="11" />
-
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="legion" revision="11" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="lineage" revision="lineage-17.1" />
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_bluetooth_ext" remote="legion" revision="11" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="legion" revision="11" />
@@ -14,5 +14,6 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="lineage" revision="lineage-17.1" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="legion" revision="11" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="legion" revision="11" />
+  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="legion" revision="11" />
 
 </manifest>
