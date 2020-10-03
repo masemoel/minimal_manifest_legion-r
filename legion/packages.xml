@@ -5,6 +5,7 @@
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="legion" revision="11" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="legion" revision="11" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="legion" revision="11" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="legion" revision="11" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" revision="lineage-17.1" />
   <project path="packages/apps/Email" name="LineageOS/android_packages_apps_Email" remote="github" revision="lineage-17.1" />
   <project path="packages/apps/UnifiedEmail" name="LineageOS/android_packages_apps_UnifiedEmail" remote="github" revision="lineage-17.1" />
