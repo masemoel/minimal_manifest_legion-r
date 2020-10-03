@@ -60,6 +60,9 @@
   <!-- external -->
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/sqlite" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <remove-project name="platform/frameworks/opt/telephony" />
                   
   <!-- frameworks -->
   <remove-project name="platform/frameworks/av" />
@@ -93,6 +96,8 @@
   <!-- Package repos -->
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/Nfc" />
+  <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   
     <!-- prebuilts -->
