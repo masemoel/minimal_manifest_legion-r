@@ -2,6 +2,7 @@
 <manifest>
   <project path="external/json-c" name="external_json-c" remote="legion" revision="11" />
   <project path="external/selinux" name="external_selinux" remote="legion" revision="11" />
+  <project path="external/sqlite" name="external_sqlite" remote="legion" revision="11" />
   <project path="external/tinycompress" name="external_tinycompress" remote="legion" revision="11" />
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" revision="lineage-17.1" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage" revision="lineage-17.1" />
