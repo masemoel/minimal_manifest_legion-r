@@ -4,6 +4,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="legion" revision="11" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="legion" revision="11" />
   <project path="packages/apps/LegionSettings" name="packages_apps_LegionSettings" remote="legion" revision="11" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="legion" revision="11" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="legion" revision="11" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="legion" revision="11" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="legion" revision="11" />
