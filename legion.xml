@@ -19,6 +19,12 @@
           revision="refs/heads/lineage-18.0"
           sync-j="8" />
 
+  <!-- AOSP_Common -->
+  <remote name="common"
+          fetch="https://github.com/AOSP-Common"
+          revision="refs/heads/11.0"
+          sync-j="8" />
+
   <!--Legion Lab-->
   <remote name="leg-lab"
           fetch="https://gitlab.com/Rajkale99"
