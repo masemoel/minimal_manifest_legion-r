@@ -64,7 +64,7 @@
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="lineage" revision="lineage-17.1-caf" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="lineage" revision="lineage-17.1" />
   <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="lineage" revision="lineage-17.1" />
-  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="legion" revision="11" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lineage" revision="lineage-18.0-caf" />
   <project name="hardware_qcom_bootctrl"   path="hardware/qcom/bootctrl" remote="legion" revision="11" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="lineage" revision="lineage-17.1" />
   <project path="hardware/ril" name="android_hardware_ril" remote="lineage" revision="lineage-17.1" />
