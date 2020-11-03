@@ -94,7 +94,8 @@
   <remove-project name="platform/hardware/qcom/power" />
   <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/hardware/qcom/keymaster" />
-  
+  <remove-project name="platform/hardware/nxp/nfc" />
+
   <!-- Package repos -->
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/Launcher3" />
