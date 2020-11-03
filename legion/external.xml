@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="legion" revision="11" />
   <project path="external/json-c" name="external_json-c" remote="legion" revision="11" />
   <project path="external/selinux" name="external_selinux" remote="legion" revision="11" />
   <project path="external/sqlite" name="external_sqlite" remote="legion" revision="11" />
