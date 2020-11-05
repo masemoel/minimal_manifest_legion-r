@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="legion" revision="11" />
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="leg-lab" revision="11" />
   <project path="external/libcxx" name="external_libcxx" remote="legion" revision="11" />
   <project path="external/json-c" name="external_json-c" remote="legion" revision="11" />
   <project path="external/selinux" name="external_selinux" remote="legion" revision="11" />
