@@ -4,5 +4,6 @@
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="legion" revision="11" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="legion" revision="11" />
   <project path="device/legion/sepolicy" name="device_legion_sepolicy" remote="legion" revision="11" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="legion" revision="11" />
 
 </manifest>
