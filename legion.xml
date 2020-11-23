@@ -10,7 +10,7 @@
   <!-- LegionOS Devices -->
   <remote name="LegionOS-Devices"
           fetch="https://github.com/LegionOS-Devices"
-          revision="refs/heads/q"
+          revision="refs/heads/11"
           sync-j="8" />
 
   <!-- Lineage -->
