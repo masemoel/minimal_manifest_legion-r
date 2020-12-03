@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="common" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="legion" revision="11" />
   <project path="external/scudo" name="android_external_scudo" remote="common" />
   <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="legion" revision="11" />
   <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="leg-lab" revision="11" />
