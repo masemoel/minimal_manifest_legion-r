@@ -3,7 +3,7 @@
 	
   <project path="system/core" name="system_core" remote="legion" revision="11" />
   <project path="system/sepolicy" name="system_sepolicy" remote="legion" revision="11" />
-  <project path="system/bt" name="system_bt" remote="legion" revision="11" />
+  <project path="system/bt" name="android_system_bt" remote="common" />
   <project path="system/qcom" name="system_qcom" remote="legion" revision="11" />
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="legion" revision="11" />
   <project path="system/vold" name="system_vold" remote="legion" revision="11" />
