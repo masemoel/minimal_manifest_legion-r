@@ -8,7 +8,6 @@
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="xiaomi-sm6250-devs/android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="github" revision="lineage-18.0" />
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="xiaomi-sm6250-devs/android_vendor_qcom_opensource_bluetooth_ext" remote="github" revision="lineage-18.0" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="common" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="common" />
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="common" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="legion" revision="11" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="legion" revision="11" />
