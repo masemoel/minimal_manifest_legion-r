@@ -2,7 +2,7 @@
 <manifest>
 
   <project path="vendor/legion" name="vendor_legion" remote="legion" revision="11" />
-  <project path="vendor/gapps" name="vendor_gapps" remote="leg-lab" revision="11" />
+  <project path="vendor/gapps" name="android_vendor_google_gms" remote="gapps" revision="ruby" />
   <project path="vendor/LegionParts" name="vendor_LegionParts" remote="legion" revision="11" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="xiaomi-sm6250-devs/android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="github" revision="lineage-18.0" />
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="xiaomi-sm6250-devs/android_vendor_qcom_opensource_bluetooth_ext" remote="github" revision="lineage-18.0" />
