@@ -34,11 +34,7 @@
   <!-- Github -->
   <remote name="github"
           fetch="https://github.com/" />
-
-  <!-- AOSPA Gitlab -->
-  <remote name="gapps"
-          fetch="https://gitlab.com/AOSPA" />
-		   
+	   
   <!-- Removed projects -->	   
   <include name="remove.xml" />
 
