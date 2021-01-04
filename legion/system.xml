@@ -9,4 +9,5 @@
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="legion" revision="11" />
   <project path="system/vold" name="system_vold" remote="legion" revision="11" />
   <project path="system/update_engine" name="system_update_engine" remote="legion" revision="11" />
+  <project path="system/netd" name="system_netd" remote="legion" revision="11" />
 </manifest>
