@@ -35,15 +35,197 @@
   <remote name="github"
           fetch="https://github.com/" />
 
-  <!-- Imported projects -->
-  <include name="legion/build.xml" />
-  <include name="legion/device.xml" />
-  <include name="legion/external.xml" />
-  <include name="legion/frameworks.xml" />
-  <include name="legion/hals.xml" />
-  <include name="legion/packages.xml" />
-  <include name="legion/prebuilt.xml" />
-  <include name="legion/system.xml" />
-  <include name="legion/vendors.xml" />
+  <!-- Build -->
+  <project path="build/make" name="build_make" remote="legion" revision="11" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+      <linkfile src="core" dest="build/core" />
+      <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+      <linkfile src="target" dest="build/target" />
+      <linkfile src="tools" dest="build/tools" />
+  </project>
+    
+  <project path="build/soong" name="build_soong" remote="legion" revision="11" >
+      <linkfile src="root.bp" dest="Android.bp" />
+      <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+     
+  <project path="art" name="android_art" remote="legion" revision="11" /> 
+  <project path="bionic" name="bionic" remote="legion" revision="11" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="legion" revision="11" />
+  <project path="tools/metalava" name="tools_metalava" remote="legion" revision="11" />
+  <project path="manifest" name="manifest" remote="legion" />
+
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="legion" revision="11" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="legion" revision="11" />
+  <project path="device/legion/sepolicy" name="device_legion_sepolicy" remote="legion" revision="11" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="legion" revision="11" />
+
+  <!-- External -->
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="legion" revision="11" />
+  <project path="external/scudo" name="android_external_scudo" remote="common" />
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="legion" revision="11" />
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="leg-lab" revision="11" />
+  <project path="external/libcxx" name="external_libcxx" remote="legion" revision="11" />
+  <project path="external/json-c" name="android_external_json-c" remote="lineage" revision="lineage-18.0" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" revision="lineage-18.0" />
+  <project path="external/selinux" name="external_selinux" remote="legion" revision="11" />
+  <project path="external/sqlite" name="external_sqlite" remote="legion" revision="11" />
+  <project path="external/fastrpc" name="external_fastrpc" remote="legion" revision="11" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="legion" revision="11" />
+  <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="lineage" revision="lineage-18.0" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" revision="lineage-18.0" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage" revision="lineage-18.0" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="lineage" revision="lineage-18.0" />
+  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="lineage" revision="lineage-18.0" />  
+  <project path="external/bash" name="android_external_bash" remote="lineage" revision="lineage-17.1" />
+  <project path="external/connectivity" name="android_external_connectivity" remote="lineage" revision="lineage-17.1" />
+  <project path="external/htop" name="android_external_htop" remote="lineage" revision="lineage-17.1" />
+  <project path="external/libncurses" name="android_external_libncurses" remote="lineage" revision="lineage-17.1" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="lineage" revision="lineage-17.1" />
+  <project path="external/nano" name="android_external_nano" remote="lineage" revision="lineage-17.1" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" revision="lineage-17.1" />
+  <project path="external/p7zip" name="android_external_p7zip" remote="lineage" revision="lineage-17.1" />
+  <project path="external/pigz" name="android_external_pigz" remote="lineage" revision="lineage-17.1" />
+  <project path="external/rsync" name="android_external_rsync" remote="lineage" revision="lineage-17.1" />
+  <project path="external/unrar" name="android_external_unrar" remote="lineage" revision="lineage-17.1" />
+  <project path="external/vim" name="android_external_vim" remote="lineage" revision="lineage-17.1"/>
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="legion" revision="11" />
+  <project path="frameworks/base" name="frameworks_base" remote="legion" revision="11" />
+  <project path="frameworks/native" name="frameworks_native" remote="legion" revision="11" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="legion" revision="11" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="legion" revision="11" />
+
+  <!-- Hals -->
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="legion" revision="11" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="legion" revision="11" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="legion" revision="11" />
+  <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" remote="legion" revision="11" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="lineage" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!-- add guards for CAF repositories -->    
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/msm8916/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-18.0-caf-msm8916" />
+  <project path="hardware/qcom-caf/msm8916/display" name="android_hardware_qcom_display" remote="lineage" revision="lineage-18.0-caf-msm8916" />
+  <project path="hardware/qcom-caf/msm8916/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-18.0-caf-msm8916" />
+  <project path="hardware/qcom-caf/msm8952/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-17.1-caf-msm8952" />
+  <project path="hardware/qcom-caf/msm8952/display" name="android_hardware_qcom_display" remote="lineage" revision="lineage-17.1-caf-msm8952" />
+  <project path="hardware/qcom-caf/msm8952/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-17.1-caf-msm8952" />
+  <project path="hardware/qcom-caf/msm8960/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-17.1-caf-msm8960" />
+  <project path="hardware/qcom-caf/msm8960/display" name="android_hardware_qcom_display" remote="lineage" revision="lineage-17.1-caf-msm8960" />
+  <project path="hardware/qcom-caf/msm8960/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-17.1-caf-msm8960" />
+  <project path="hardware/qcom-caf/msm8974/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-17.1-caf-msm8974" />
+  <project path="hardware/qcom-caf/msm8974/display" name="android_hardware_qcom_display" remote="lineage" revision="lineage-17.1-caf-msm8974" />
+  <project path="hardware/qcom-caf/msm8974/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-17.1-caf-msm8974" />
+  <project path="hardware/qcom-caf/msm8994/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-17.1-caf-msm8994" />
+  <project path="hardware/qcom-caf/msm8994/display" name="android_hardware_qcom_display" remote="lineage" revision="lineage-17.1-caf-msm8994" />
+  <project path="hardware/qcom-caf/msm8994/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-17.1-caf-msm8994" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom-caf_audio" remote="legion" revision="11-msm8996" />
+  <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-17.1-caf-msm8996" />
+  <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_display" remote="legion" revision="11-msm8996" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-18.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="lineage" revision="lineage-18.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-18.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="hardware_qcom-caf_audio" remote="legion" revision="11-sdm845" />
+  <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom-caf_display" remote="legion" revision="11-sdm845" />
+  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-17.1-caf-sdm845" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_audio" remote="legion" revision="11-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_display" remote="legion" revision="11-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_media" remote="legion" revision="11-sm8150" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="lineage" revision="lineage-17.1" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lineage" revision="lineage-18.0-caf" />
+  <project name="hardware_qcom_bootctrl"   path="hardware/qcom/bootctrl" remote="legion" revision="11" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="lineage" revision="lineage-17.1" />
+  <project path="hardware/ril" name="hardware_ril" remote="legion" revision="11" />
+  <project name="vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="legion" revision="11" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-17.1" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="lineage" revision="lineage-17.1"/>
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-17.1" />   
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="lineage" revision="lineage-18.0-caf" />
+  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="lineage" revision="lineage-17.1" />
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="lineage" revision="lineage-17.1" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="lineage" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="legion" revision="11" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="legion" revision="11" />
+  <project path="packages/apps/LegionSettings" name="packages_apps_LegionSettings" remote="legion" revision="11" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="common" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="legion" revision="11" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="legion" revision="11" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="legion" revision="11" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="legion" revision="11" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="legion" revision="11" />
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" revision="lineage-17.1" />
+  <project path="packages/apps/Email" name="LineageOS/android_packages_apps_Email" remote="github" revision="lineage-17.1" />
+  <project path="packages/apps/UnifiedEmail" name="LineageOS/android_packages_apps_UnifiedEmail" remote="github" revision="lineage-17.1" />
+
+  <!-- Prebuilt -->
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="legion" revision="11" />
+  <project path="prebuilts/tools-legion" name="prebuilts_tools-legion" remote="legion" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="legion" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="legion" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="legion" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" remote="legion" revision="11" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="legion" revision="11" />
+  <project path="system/bt" name="android_system_bt" remote="common" />
+  <project path="system/qcom" name="system_qcom" remote="legion" revision="11" />
+  <project path="system/tools/dtbtool" name="system_tools_dtbtool" remote="legion" revision="11" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="legion" revision="11" />
+  <project path="system/vold" name="system_vold" remote="legion" revision="11" />
+  <project path="system/update_engine" name="system_update_engine" remote="legion" revision="11" />
+  <project path="system/netd" name="system_netd" remote="legion" revision="11" />
+
+  <!-- Vendors -->
+  <project path="vendor/legion" name="vendor_legion" remote="legion" revision="11" />
+  <project path="vendor/google/gms" name="android_vendor_google_gms" remote="leg-lab" revision="11" />
+  <project path="vendor/LegionParts" name="vendor_LegionParts" remote="legion" revision="11" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="xiaomi-sm6250-devs/android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="github" revision="lineage-18.0" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="xiaomi-sm6250-devs/android_vendor_qcom_opensource_bluetooth_ext" remote="github" revision="lineage-18.0" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="common" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="common" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="legion" revision="11" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="legion" revision="11" />
+      <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="legion" revision="11" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="lineage" revision="lineage-17.1" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="lineage" revision="lineage-17.1" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="vendor_qcom_opensource_healthd-ext" remote="legion" revision="11" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="legion" revision="11" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="lineage" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="lineage" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lineage" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="lineage" />
 
 </manifest>
