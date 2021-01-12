@@ -34,9 +34,6 @@
   <!-- Github -->
   <remote name="github"
           fetch="https://github.com/" />
-	   
-  <!-- Removed projects -->	   
-  <include name="remove.xml" />
 
   <!-- Imported projects -->
   <include name="legion/build.xml" />
