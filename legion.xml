@@ -226,6 +226,6 @@
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="lineage" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="lineage" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lineage" />
-  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="lineage" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="legion" />
 
 </manifest>
