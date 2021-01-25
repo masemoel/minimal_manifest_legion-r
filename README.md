@@ -1,4 +1,4 @@
-![Project-LegionOS](https://raw.githubusercontent.com/Project-LegionOS/xda_template/10/logos/legion.jpg)
+![LegionOS](https://i.imgur.com/6qCMrc2.png[/img])
 
 ---------------------------------------------------------------------------------------
  Getting Started:
