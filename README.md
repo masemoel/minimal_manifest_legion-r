@@ -50,6 +50,9 @@ $ make legion
  ===============
 
  * [**Rajkale99**](https://t.me/rajkale99) - Founder & Lead Developer
+ * [**Lucas**](https://t.me/pintos) - Device Manager
+ * [**Anon Hacker**](https://t.me/AnonymousHacker_47) - Featurer aka cherry picker
+ * [**Immanuel Raj**](https://t.me/Immanuel_Raj) - Website maintainer & cherry-picker
  
 ---------------------------------------------------------------------------------------
  Credits:
