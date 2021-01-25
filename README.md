@@ -43,7 +43,7 @@ $ make legion
  Maintainership:
  ================
 
- Apply for official maintainership [**Here**](https://docs.google.com/forms/d/e/1FAIpQLSfFtMhXooFToxvjTAk-5vt2t06BVnRKhhdkXvDgJE3c6cZ8wg/viewform)
+ Apply for official maintainership [**Here**](https://github.com/Project-LegionOS/Docs)
 
 ---------------------------------------------------------------------------------------
  TeamLegionOS
@@ -66,4 +66,4 @@ $ make legion
 
 ---------------------------------------------------------------------------------------
 
-Thread template refer [**HERE**](https://github.com/Project-LegionOS/xda_template/blob/10/template.txt)
+Thread template for Xda refer [**HERE**](https://github.com/Project-LegionOS/xda_template/blob/10/template.txt)
