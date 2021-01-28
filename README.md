@@ -9,24 +9,14 @@ To get started with manifest/legionos, you'll need to get familiar with [Repo](h
 To initialize your local repository, use a command like this:
 
 ```bash
-repo init -u https://github.com/Project-LegionOS/manifest.git -b 11
-
-```
-You can alternatively use this command to save some space and time :
-
-```bash
-repo init --depth=1 -u https://github.com/Project-LegionOS/manifest.git -b 11
+repo init --depth=1 -u https://github.com/masemoel/minimal_manifest_legion-r.git -b 11
 
 ```
 
 Then to sync up:
 
 ```
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
-```
-You can just use `repo sync` or above command, but this will save you from lot of terminal spam, data and time.
-```bash
-repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+repo sync --current-branch --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$( nproc --all ) && repo sync --current-branch --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$( nproc --all ) && . build/envsetup.sh && make clobber
 ```
 ---------------------------------------------------------------------------------------
  Compilation of  LegionOS:
