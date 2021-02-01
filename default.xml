@@ -2,12 +2,10 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/"
+           fetch=".."
            review="https://android-review.googlesource.com/" />
-
-  <default revision="refs/tags/android-11.0.0_r27"
+  <default revision="refs/tags/android-11.0.0_r29"
            remote="aosp"
-    	   sync-c="true"
            sync-j="4" />
 
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
