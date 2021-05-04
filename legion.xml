@@ -51,7 +51,7 @@
       <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
      
-  <project path="art" name="masemoel/art_legion-r" remote="github" revision="11"/> 
+  <project path="art" name="android_art" remote="legion" /> 
   <project path="bionic" name="bionic" remote="legion"  />
   <project path="bootable/recovery" name="bootable_recovery" remote="legion" />
   <project path="tools/metalava" name="tools_metalava" remote="legion" />
